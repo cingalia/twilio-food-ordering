@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::post("/order", "MenuController@commandHandler");
+
 Route::get('/', function () {
     return view('welcome');
 });
